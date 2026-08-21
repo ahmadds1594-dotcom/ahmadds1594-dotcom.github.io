@@ -1,0 +1,140 @@
+:root {
+  --bg-deep-navy: #080d1a;
+  --bg-card-navy: rgba(15, 23, 42, 0.7);
+  --accent-blue: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.25);
+  --border-navy: rgba(255, 255, 255, 0.08);
+  --text-muted-custom: #94a3b8;
+}
+
+body {
+  background-color: var(--bg-deep-navy);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Navbar */
+.bg-navy-glass {
+  background: rgba(8, 13, 26, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-navy);
+}
+
+.text-accent {
+  color: var(--accent-blue) !important;
+}
+
+.text-light-50 {
+  color: var(--text-muted-custom) !important;
+}
+
+/* Hero Section */
+.jumbotron {
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  background: radial-gradient(circle at 50% 30%, rgba(30, 58, 138, 0.25), transparent 70%);
+}
+
+.profile-glow-wrapper {
+  padding: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-blue), transparent);
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
+.profile-img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border: 3px solid var(--bg-deep-navy) !important;
+}
+
+/* Buttons */
+.btn-accent {
+  background-color: var(--accent-blue);
+  color: #080d1a;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: #0284c7;
+  color: #ffffff;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+/* Section Styling */
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  scroll-margin-top: 70px;
+}
+
+.title-line {
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-blue);
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: var(--bg-card-navy);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-navy) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.bg-navy-light {
+  background-color: rgba(56, 189, 248, 0.1) !important;
+}
+
+.border-accent {
+  border-color: rgba(56, 189, 248, 0.3) !important;
+}
+
+/* Project Cards Hover */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+}
+
+/* Certifications List */
+.list-cert li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.list-cert li::before {
+  content: "•";
+  color: var(--accent-blue);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Contact Items */
+.contact-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-navy);
+  transition: background 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(56, 189, 248, 0.05);
+}
+
+/* Footer */
+.footer-dark {
+  background-color: #040711;
+  border-top: 1px solid var(--border-navy);
+}
